@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> Images </title>
+    </head>
+    
+    <body>
+        <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="house"
+        srcset="/assets/small.jpg 480w,
+                /assets/mediumm.jpg 800w,
+                /assets/large.jpg 1200w">
+
+        <picture>
+            <source media="(max width:600px)" srcset="https://www.w3schools.com/html/pic_trulli.jpg">
+            <source media="(max width:900px)" srcset="https://www.w3schools.com/html/img_car.jpg">
+            <img src="https://www.w3schools.com/html/img_food.jpg">
+        </picture>      
+        
+        
+        <img src="https://www.w3schools.com/html/workplace.jpg" alt="workspace" usemap="workspace">
+        
+        <map name="workspace">
+            <area shape="rect" coords="34,44,270,350" href="computer.html" alt="computer">
+            <area shape="rect" coords="290,172,333,250" href="phone.html" alt="phone">
+            <area shape="circle" coords="137,300,44" href="cup.html" alt="cup"> 
+        </map>
+
+    </body>
+</html>
